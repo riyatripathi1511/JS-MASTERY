@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions</title>
+</head>
+<body>
+    <h3>String Functions</h3>
+    <script>
+        var line = "Bob is a nice person"
+        console.log(line.length)
+        console.log(line.indexOf("n"));// finds the first occurrence of item
+        console.log(line.lastIndexOf("p"));//finds the last occurrence of  item
+       
+        console.log(line.slice(2,7));// b is bcz last  index is not included(here its 7th index),slice allows negative index
+        console.log(line.substring(2,7));// b is bcz last  index is not included(here its 7th index)   
+        console.log(line.substr(2,7));// 2nd parameter is length,here it means 6 character starting from index 2 and including index 2
+        
+        console.log(line.toUpperCase());
+        console.log(line.toLowerCase());
+
+        var data ="  Today is a good day to  go    outside   "
+     console.log(data);
+     console.log(data.trim); //removes leading and trailing
+      
+     console.log(line);
+     var result = line.replace("Bob","Joe");//does not change the original string 
+     console.log(result);
+
+     console.log(line.charAt(5));//5th index
+     console.log(line.charCodeAt(5));//5th index item's UTF code
+     console.log(line[5]);
+  </script>
+</body>
+</html>
