@@ -7,9 +7,32 @@
     <title>Scope of variable in JS</title>
 </head>
 <body>
+    <h2>Scope variable in JS</h2>
     <script>
-    var name = "Riya";
+        //if we declare variable directly inside script tag than it takes global scape
+    var name = "Peter";
+    var name ="John";//variable re-declaration with var keyword does not give var keyword
     console.log(name);
+
+    function f1(){
+        var name2 ="Jane";//this variable   will take local scope of a function
+        console.log(name);
+    }
+    console.log("Your name is "+ name);
+    // console.log(name2);//this will give error bcz name2 has scope only within f1 function
+     
+    let output ="Hello";
+    // let output ="Hello2";//let will not allow re-declaration of same variable outside
+     function f2(){
+        let output ="New Hello";//let will allow re-declaration inside a function or any block
+        console.log(output);
+     }
+     f2();
+
+     const finalVal ="This value cannot be modified,as its a constant";
+     finalVal="I am changing value of constant hence it will give a error";
+     console.log(finalVal);
+
 </script>
 </body>
 </html>
