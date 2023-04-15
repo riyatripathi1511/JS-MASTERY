@@ -48,7 +48,7 @@ while(c<5){
 
 console.log("**********iterate with do0 while loop ***********");
 //let i =10;
-let i = 0;
+let i = 0;  
 do{
   console.log(i);
   i++;
