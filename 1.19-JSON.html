@@ -19,9 +19,9 @@
          let empStr = JSON.stringify(empOne);//converts JSON object to string
          console.log(empStr);
          console.log(empStr.length);
-         console.log(empStr.address.city);
+      //   console.log(empStr.address.city); invalid string  value can't be converted to string
 
-         
+      let myObj = JSON.parse(empStr)//converts a valid json string to json object     
     </script>
 </body>
 </html>
